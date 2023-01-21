@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marvel | Avengers</title>
+	<link rel="stylesheet" type="text/css" href="iron man.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+	<header>
+		<a href="***" class="logo"><i class='fab fa-asymmetrik' id="img" style='font-size:55px;color:red'></i></a>
+		<ul class="navigation">
+			<li><a href="Home java.html">Home</a></li>
+			<li><a href="***">TV Shows</a></li>
+			<li><a href="***">Movie</a></li>
+			<li><a href="***">Latest</a></li>
+			<li><a href="***">My list</a></li>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="search" name="">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+		
+	</header>
+	<div class="banner">
+		<img src="https://wallpapertag.com/wallpaper/full/e/3/5/285808-vertical-iron-man-wallpaper-1920x1080-cell-phone.jpg" class="bg">
+		<div class="contant">
+			<img src="http://assets.stickpng.com/images/585f9333cb11b227491c3581.png" class="contant" id="movieTitle">
+			<h4>
+				<span>2020</span>
+				<span><i>12+</i></span>
+				<span>1h 20min</span>
+				<span>Action</span>
+			</h4><br>
+			<h3 style="color: red;">Железный человек</h3>			
+			<p> Миллиардер-изобретатель Тони Старк попадает в плен к Афганским террористам, которые пытаются заставить его создать оружие массового поражения. В тайне от своих захватчиков Старк конструирует высокотехнологичную киберброню, которая помогает ему сбежать. Однако по возвращении в США он узнаёт, что в совете директоров его фирмы плетётся заговор, чреватый страшными последствиями. Используя своё последнее изобретение, Старк пытается решить проблемы своей компании радикально...</p>
+			<div class="buttons">
+				<a href="https://1789.statewaus.club/EwXGRkOQhBjB?kp_id=61237"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+				<a href="***"><i class="fa fa-plus" aria-hidden="true"></i>List play</a>
+			</div>
+		</div>
+		<a class="play" onclick="toggleVideo();" ><i class='far fa-play-circle' style='font-size:40px;color:red'></i>&nbsp;&nbsp;Watch trailer</a>
+	</div>
+
+	<div class="trailer">
+		<video src="https://region.dfs.ivi.ru/jW1H3p8zdKJGoHPqcgbCbO4RiYzAlZ6p3UtBvUkdvTnKXNCMUoNO20360/mp4-hi/m6Bavz1JxehO9K7TbUMGtA,1612130768/storage28/contents/7/f/1e2ab5507bec93ce10f860d1ecac50.mp4?rnd=0.9820036401633443" controls="true" autoplay="autoplay"></video>
+		<img src="close.png" class="close" onclick="toggleVideo();">
+	</div>
+
+	<script>
+		function toggleVideo(){
+			const trailer = document.querySelector('.trailer');
+			const video = document.querySelector('video');
+			trailer.classList.toggle('active')
+			video.currentTime = 0;
+			video.pause();
+		}
+	</script>
+
+</body>
+</html>

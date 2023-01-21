@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marvel | Avengers</title>
+	<link rel="stylesheet" type="text/css" href="spiderman.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+	<header>
+		<a href="***" class="logo"><i class='fab fa-asymmetrik' id="img" style='font-size:55px;color:red'></i></a>
+		<ul class="navigation">
+			<li><a href="Home java.html">Home</a></li>
+			<li><a href="***">TV Shows</a></li>
+			<li><a href="***">Movie</a></li>
+			<li><a href="***">Latest</a></li>
+			<li><a href="***">My list</a></li>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="search" name="">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+		
+	</header>
+	<div class="banner">
+		<img src="https://cdn.wallpapersafari.com/94/96/W02Rc9.jpg" class="bg">
+		<div class="contant">
+			<img src="http://assets.stickpng.com/images/585f9333cb11b227491c3581.png" class="contant" id="movieTitle">
+			<h4>
+				<span>2020</span>
+				<span><i>12+</i></span>
+				<span>1h 20min</span>
+				<span>Action</span>
+			</h4><br>
+			<h3 style="color: red;">ЧЕЛОВЕК-ПАУК: ВДАЛИ ОТ ДОМА:</h3>			
+			<p> Питер Паркер пытается забыть минувшие события, смирившись с прошлым и наметив горизонты будущего. Вот только как стереть из памяти тревожные картинки тех трагических моментов, которые отразились на судьбах его родных и друзей? Чтобы отвлечься и окончательно не замкнуться в себе, Питер отправляется в дальнюю поездку вместе со сверстниками. Экскурсия Новым Светом обещает быть насыщенной. Что может быть интереснее летнего путешествия по историческим местам? Все планы рушит водяной монстр...</p>
+			<div class="buttons">
+				<a href="https://m4umv.com/embed/RwoJBhgADQZYWllRUV9HWltYXlFZRRsFRgUYXA=="></i>Play</a>
+				<a href="***"><i class="fa fa-plus" aria-hidden="true"></i>List play</a>
+			</div>
+		</div>
+		<a class="play" onclick="toggleVideo();" ><i class='far fa-play-circle' style='font-size:40px;color:red'></i>&nbsp;&nbsp;Watch trailer</a>
+	</div>
+
+	<div class="trailer">
+		<video src="https://cdn-media.film.ru/sites/default/files/trailers/38562357/SPIDER-MAN__FAR_FROM_HOME_%E2%80%93_International_Teaser_Trailer.mp4" controls="true" autoplay="true"></video>
+		<img src="close.png" class="close" onclick="toggleVideo();">
+	</div>
+
+	<script>
+		function toggleVideo(){
+			const trailer = document.querySelector('.trailer');
+			const video = document.querySelector('video');
+			trailer.classList.toggle('active')
+			video.currentTime = 0;
+			video.pause();
+		}
+	</script>
+
+</body>
+</html>

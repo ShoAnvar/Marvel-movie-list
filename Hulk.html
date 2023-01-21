@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marvel | Avengers</title>
+	<link rel="stylesheet" type="text/css" href="hulk.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+	<header>
+		<a href="***" class="logo"><i class='fab fa-asymmetrik' id="img" style='font-size:55px;color:red'></i></a>
+		<ul class="navigation">
+			<li><a href="Home java.html">Home</a></li>
+			<li><a href="***">TV Shows</a></li>
+			<li><a href="***">Movie</a></li>
+			<li><a href="***">Latest</a></li>
+			<li><a href="***">My list</a></li>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="search" name="">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+		
+	</header>
+	<div class="banner">
+		<img src="https://cdn.wallpapersafari.com/40/66/RrdXiD.jpg" class="bg">
+		<div class="contant">
+			<img src="http://assets.stickpng.com/images/585f9333cb11b227491c3581.png" class="contant" id="movieTitle">
+			<h4>
+				<span>2020</span>
+				<span><i>12+</i></span>
+				<span>1h 20min</span>
+				<span>Action</span>
+			</h4><br>
+			<h3 style="color: red;">Халк:</h3>			
+			<p> Доктор Брюс Бэннер (ученый, работающий над изобретением новой бомбы) подвергся воздействию гамма-лучей и превратился в Халка - существо невероятной физической силы, которое в состоянии ярости становится огромным зеленым монстром.
+			Его преследуют военные под предводительством генерала Росса, ему приходится бежать через всю страну. В конце концов, у него возникает любовная история с генеральской дочкой Бетти...</p>
+			<div class="buttons">
+				<a href="https://toq1.films-s.life/iMEg0A8rnB5n?kp_id=7962"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+				<a href="***"><i class="fa fa-plus" aria-hidden="true"></i>List play</a>
+			</div>
+		</div>
+		<a class="play" onclick="toggleVideo();" ><i class='far fa-play-circle' style='font-size:40px;color:red'></i>&nbsp;&nbsp;Watch trailer</a>
+	</div>
+
+	<div class="trailer">
+		<video src="//widgets.kinopoisk.ru/discovery/film/7962/trailer/460?noAd=0&embedId=&hidden=&muted=&loop=0&autoplay=1&from=&onlyPlayer=1" controls="true" autoplay="true"></video>
+		<img src="close.png" class="close" onclick="toggleVideo();">
+	</div>
+
+	<script>
+		function toggleVideo(){
+			const trailer = document.querySelector('.trailer');
+			const video = document.querySelector('video');
+			trailer.classList.toggle('active')
+			video.currentTime = 0;
+			video.pause();
+		}
+	</script>
+
+</body>
+</html>

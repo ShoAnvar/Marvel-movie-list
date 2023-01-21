@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marvel | Movie</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="***" class="logo"><i class='fab fa-asymmetrik' id="img" style='font-size:55px;color:red'></i></a>
+		<ul class="navigation">
+			<li><a href="Home java.html">Home</a></li>
+			<li><a href="***">TV Shows</a></li>
+			<li><a href="***">Movie</a></li>
+			<li><a href="***">Latest</a></li>
+			<li><a href="***">My list</a></li>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="search" name="">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+		
+	</header>
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="Iron man.html" target="_blank"><img src="https://im0-tub-com.yandex.net/i?id=34743269df89b7f0d036de5f57f21820&n=13"></a></div>
+
+      <div class="swiper-slide"><a href="Doctor strenj.html" target="_blank"><img src="https://im0-tub-com.yandex.net/i?id=82531ac27b0c6e7eca2e3dd60747ed2e&n=13"></a></div>
+
+      <div class="swiper-slide"><a href="capAmerica.html" target="_blank"><img src="https://im0-tub-com.yandex.net/i?id=5ab6128bed32b3d35c1c4c0d63746faf&n=13"></a></div>
+
+      <div class="swiper-slide"><a href="Hulk.html" target="_blank"><img src="https://im0-tub-com.yandex.net/i?id=437cf1a1ddaebca1319e57d1a4e92a1d&n=13"></a></div>
+
+      <div class="swiper-slide"><a href="Iron man.html" target="_blank"><img src="https://im0-tub-com.yandex.net/i?id=a42582014dc3e5caf24ffc556ef4d534&n=13"></a></div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+    	var swiper = new Swiper('.swiper-container', {
+      	effect: 'coverflow',
+      	grabCursor: true,
+      	centeredSlides: true,
+      	slidesPerView: 'auto',
+      	coverflowEffect: {
+        	rotate: 20,
+        	stretch: 0,
+        	depth: 200,
+        	modifier: 1,
+        	slideShadows: true,
+      	},
+      	loop: true,
+      // 	autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
+    	});
+  </script>
+
+</body>
+</html>
